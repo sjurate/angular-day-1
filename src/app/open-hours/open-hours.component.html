@@ -1,0 +1,15 @@
+<p>open-hours works! It's a DUMMY component</p>
+<p>{{ hoursData[0].day }}</p>
+<table>
+  <tr>
+    <th>Day</th>
+    <th>Opens</th>
+    <th>Closes</th>
+  </tr>
+
+  <tr *ngFor="let singleDay of hoursData">
+    <td>{{ singleDay.day }}</td>
+    <td>{{ singleDay.opens }}</td>
+    <td>{{ singleDay.closes }}</td>
+  </tr>
+</table>
